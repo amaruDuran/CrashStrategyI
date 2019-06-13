@@ -6,7 +6,7 @@ before_install:
 jdk:
   - openjdk8
 
-install: ant
+install: ant -lib /home/travis/.ant/lib
 
 script:
   - ant integracion-continua
