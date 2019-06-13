@@ -1,6 +1,10 @@
 language: java
+
+beforeinstall:
+  - sudo apt-get install openjdk-8-jdk
+
 jdk:
-  - oraclejdk8
+  - openjdk8
 
 install: ant
 
