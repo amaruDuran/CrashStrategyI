@@ -2,11 +2,13 @@ language: java
 
 before_install:
   - sudo apt-get install ant
+  - export CLASSPATH=/usr/share/java/junit4-4.12.jar
+  - whereis java
 
 jdk:
   - openjdk8
 
-install: ant -lib /home/travis/.ant/lib
+install: ant
 
 script:
   - ant integracion-continua
